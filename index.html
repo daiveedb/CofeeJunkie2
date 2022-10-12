@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Junkie</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- font awesome icons -->
+    <script src="./js/all.js"></script>
+  </head>
+
+  <body>
+    <!-- Pre Loader -->
+    <div class="preloader">
+      <img src="./img/preloader.gif" alt="preloader" class="preloader__item" />
+    </div>
+    <!-- end lof Pre loader -->
+    <!-- Header -->
+    <header class="header" id="header">
+      <!-- banner -->
+      <div class="banner">
+        <h1 class="banner__title bell-fonts">Coffee Junkie</h1>
+        <div class="banner__icons">
+          <a href="" class="banner__social-icon">
+            <i class="fab fa-facebook fa-fw"></i>
+          </a>
+          <a href="" class="banner__social-icon">
+            <i class="fab fa-twitter fa-fw"></i>
+          </a>
+          <a href="" class="banner__social-icon">
+            <i class="fab fa-google-plus fa-fw"></i>
+          </a>
+          <a href="" class="banner__social-icon">
+            <i class="fab fa-instagram fa-fw"></i>
+          </a>
+        </div>
+      </div>
+      <!-- end of banner -->
+      <!-- video -->
+      <article class="video__container">
+        <video class="video__item" autoplay muted loop>
+          <source src="./video/coffee.mp4" type="video/mp4" />
+          <source src="./video/coffee.ogv" type="video/ogv" />
+          <source src="./video/coffee.webm" type="video/webm" />
+          Your Browser does not support the video tag
+        </video>
+      </article>
+      <!-- end of video -->
+      <!-- Nav button -->
+      <div class="navBtn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <!-- end of Nav Btn -->
+      <!-- Navigation -->
+      <nav class="nav">
+        <ul class="nav__links">
+          <!-- logo -->
+          <li>
+            <a href="#" class="nav__single-link nav__logo">
+              <img src="./img/navLogo.svg" alt="" />
+            </a>
+          </li>
+          <li><a href="#header" class="nav__single-link">Home</a></li>
+          <li><a href="#about" class="nav__single-link">About</a></li>
+          <li><a href="#drink" class="nav__single-link">Free Drink</a></li>
+          <li><a href="#work" class="nav__single-link">Work</a></li>
+          <li><a href="#contact" class="nav__single-link">Contact</a></li>
+        </ul>
+      </nav>
+      <!--Video switch -->
+      <div class="video__switch-container">
+        <div class="video__switch">
+          <span>on</span>
+          <span>off</span>
+          <div class="video__switch-btn"></div>
+        </div>
+      </div>
+    </header>
+    <!-- end of Header -->
+
+    <!-- ABout PAge -->
+
+    <section class="about section-padding" id="about">
+      <div class="grid-container grid-container--medium-2">
+        <!-- About container -->
+        <article class="about-container">
+          <!-- First child -->
+          <div class="section-title">
+            <h1 class="section-title__name bell-fonts">Our Story</h1>
+            <div class="section-title__underline"></div>
+            <p class="section-title__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a
+              dolorem placeat aspernatur perferendis id enim error. Illum,
+              corporis. Est?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Minima molestias eveniet vero expedita et, nesciunt, porr
+            </p>
+          </div>
+          <!-- Second Child -->
+          <div class="about__img">
+            <img
+              src="./img/aboutImg-1.jpeg"
+              alt="about img"
+              class="about__img-item"
+            />
+          </div>
+        </article>
+        <!-- end of about container -->
+        <!-- About container 2 -->
+        <article class="about-container">
+          <!-- First child -->
+          <div class="section-title">
+            <h1 class="section-title__name bell-fonts">What We Do</h1>
+            <div class="section-title__underline"></div>
+            <p class="section-title__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a
+              dolorem placeat aspernatur perferendis id enim error. Illum,
+              corporis. Est?Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Adipisci non commodi quidem, aspernatur excepturi numquam
+              nobis
+            </p>
+          </div>
+          <!-- Second Child -->
+          <div class="about__img about__img-special">
+            <img
+              src="./img/aboutImg-2.jpeg"
+              alt="about img"
+              class="about__img-item"
+            />
+          </div>
+          <!-- end of about container -->
+        </article>
+      </div>
+    </section>
+
+    <!-- FREE Drink section -->
+
+    <section class="drink section-padding" id="drink">
+      <div class="grid-container">
+        <!-- first item -->
+        <form class="drink-form">
+          <p class="drink-form__feedback">some text</p>
+          <h3 class="drink-form__title bell-fonts">To get free drinks</h3>
+          <div class="drink-form__input">
+            <input
+              type="text"
+              maxlength="15"
+              class="input-name"
+              placeholder="Name"
+            />
+          </div>
+          <div class="drink-form__input">
+            <input
+              type="text"
+              maxlength="20"
+              class="input-lastname"
+              placeholder="Last name"
+            />
+          </div>
+          <div class="drink-form__input">
+            <input
+              type="email"
+              maxlength="30"
+              class="input-email"
+              placeholder="Email"
+            />
+          </div>
+          <input type="submit" value="Sign Up" class="input-submit" />
+        </form>
+        <!-- second item -->
+        <article class="drink-card">
+          <h3 class="drink-card__title bell-fonts">lucky people:</h3>
+          <div class="drink-card__list"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- OUR WORK SECTION -->
+
+    <section class="work section-padding" id="work">
+      <div class="section-title section-title--left">
+        <h1 class="section-title__name bell-fonts">Our Work</h1>
+        <div class="section-title__underline"></div>
+      </div>
+      <div class="work-container">
+        <!-- single image item -->
+        <article class="work-item item-1">
+          <img src="./img/work-1.jpeg" alt="" class="work-item__img" />
+          <a href="#" class="work-item__icon" data-id="1">
+            <i class="fas fa-search"></i>
+          </a>
+        </article>
+        <!-- single image item -->
+        <article class="work-item item-2">
+          <img src="./img/work-2.jpeg" alt="" class="work-item__img" />
+          <a href="#" class="work-item__icon" data-id="2">
+            <i class="fas fa-search"></i>
+          </a>
+        </article>
+        <!-- single image item -->
+        <article class="work-item item-3">
+          <img src="./img/work-3.jpeg" alt="" class="work-item__img" />
+          <a href="#" class="work-item__icon" data-id="3">
+            <i class="fas fa-search"></i>
+          </a>
+        </article>
+        <!-- single image item -->
+        <article class="work-item item-4">
+          <img src="./img/work-4.jpeg" alt="" class="work-item__img" />
+          <a href="#" class="work-item__icon" data-id="4">
+            <i class="fas fa-search"></i>
+          </a>
+        </article>
+        <!-- single image item -->
+        <article class="work-item item-5">
+          <img src="./img/work-5.jpeg" alt="" class="work-item__img" />
+          <a href="#" class="work-item__icon" data-id="5">
+            <i class="fas fa-search"></i>
+          </a>
+        </article>
+        <!-- single image item -->
+        <article class="work-item item-6">
+          <img src="./img/work-6.jpeg" alt="" class="work-item__img" />
+          <a href="#" class="work-item__icon" data-id="6">
+            <i class="fas fa-search"></i>
+          </a>
+        </article>
+        <!-- single image item -->
+        <article class="work-item item-7">
+          <img src="./img/work-7.jpeg" alt="" class="work-item__img" />
+          <a href="#" class="work-item__icon" data-id="7">
+            <i class="fas fa-search"></i>
+          </a>
+        </article>
+        <!-- single image item -->
+        <article class="work-item item-8">
+          <img src="./img/work-8.jpeg" alt="" class="work-item__img" />
+          <a href="#" class="work-item__icon" data-id="8">
+            <i class="fas fa-search"></i>
+          </a>
+        </article>
+        <!-- single image item -->
+        <article class="work-item item-9">
+          <img src="./img/work-9.jpeg" alt="" class="work-item__img" />
+          <a href="#" class="work-item__icon" data-id="9">
+            <i class="fas fa-search"></i>
+          </a>
+        </article>
+      </div>
+      <div class="work-modal">
+        <div class="work-modal__item"></div>
+        <div class="work-modal__close">
+          <i class="fas fa-window-close"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+
+    <section class="contact section-padding" id="contact">
+      <div class="section-title section-title--left">
+        <h1 class="section-title__name bell-fonts">Contact Us</h1>
+        <div class="section-title__underline"></div>
+      </div>
+      <div class="contact-container">
+        <iframe
+          class="contact-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.8310919242813!2d3.3519370144495735!3d6.543002124752345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8dc17e4be9c1%3A0xa4d77e827c402189!2sPepsico%20Foods%20Nigeria%20Limited!5e0!3m2!1sen!2sng!4v1656758289661!5m2!1sen!2sng"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="contact-info">
+          <!-- single contact item -->
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <i class="fas fa-map-pin"></i>
+            </div>
+            <h2 class="contact-item__title">Address</h2>
+            <p class="contact-item__text">17 John Bosko street, Layi Estate</p>
+          </div>
+
+          <!-- single contact item -->
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <i class="fas fa-headphones"></i>
+            </div>
+            <h2 class="contact-item__title">Support</h2>
+            <p class="contact-item__text">
+              <span><i class="fas fa-phone"></i>: </span> +234 708 608 2215
+            </p>
+            <p class="contact-item__text">
+              <span><i class="fas fa-envelope"></i>: </span>
+              bajomodavid18@gmail.com
+            </p>
+          </div>
+
+          <!-- single contact item -->
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h2 class="contact-item__title">Work Time</h2>
+            <p class="contact-item__text">Weekdays: 8:00am - 6:30pm</p>
+            <p class="contact-item__text">Weekends: 10:00am - 3:00pm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/app.js"></script>
+  </body>
+  +369
+</html>
